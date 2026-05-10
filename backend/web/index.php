@@ -18,7 +18,6 @@
       </div>
       <nav class="nav">
         <a href="index.php"    class="nav-link active">Inicio</a>
-        <a href="historial.php" class="nav-link">Historial</a>
       </nav>
     </div>
   </header>

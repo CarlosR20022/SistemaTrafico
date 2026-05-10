@@ -42,14 +42,6 @@ export default function TabLayout() {
           tabBarIcon: ({ color }) => <TabIcon emoji="💬" color={color} />,
         }}
       />
-      <Tabs.Screen
-        name="historial"
-        options={{
-          title: 'Historial',
-          headerTitle: '📋 Historial',
-          tabBarIcon: ({ color }) => <TabIcon emoji="📋" color={color} />,
-        }}
-      />
     </Tabs>
   );
 }

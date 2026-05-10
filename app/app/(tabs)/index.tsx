@@ -19,7 +19,7 @@ export default function PrediccionScreen() {
   const [cargando, setCargando]     = useState(true);
   const [refreshing, setRefreshing] = useState(false);
   const [error, setError]           = useState<string | null>(null);
-  const [countdown, setCountdown]   = useState(300);
+  const [countdown, setCountdown]   = useState(30);
   const coordsRef    = useRef<{ lat: number; lon: number } | null>(null);
   const countdownRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
@@ -73,7 +73,7 @@ export default function PrediccionScreen() {
   }
 
   function iniciarContador() {
-    clearInterval(countdownRef.current!); setCountdown(300);
+    clearInterval(countdownRef.current!); setCountdown(30);
     countdownRef.current = setInterval(() => {
       setCountdown(prev => {
         if (prev <= 1) { if (coordsRef.current) predecir(coordsRef.current.lat, coordsRef.current.lon); return 300; }
