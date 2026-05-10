@@ -1,0 +1,8 @@
+node_modules/
+.expo/
+dist/
+.DS_Store
+/tmp/php_server.log
+.vscode/settings.json
+.idea/
+*.swp
